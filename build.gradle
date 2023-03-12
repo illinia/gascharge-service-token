@@ -42,12 +42,8 @@ if (project.hasProperty('dev')) {
         api 'com.gascharge.taemin:gascharge-domain-token:0.0.1-SNAPSHOT'
     }
 } else {
-    repositories {
-        mavenLocal()
-    }
-
     dependencies {
-        api 'com.gascharge.taemin:gascharge-domain-token:0.0.1-SNAPSHOT'
+        api project(":gascharge-domain-token")
     }
 }
 
